@@ -27,6 +27,5 @@ class HomeController extends Controller
         $cat = Category::all();
         return view('home', ['cat'=>$cat]);
     }
-
     
 }

@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
+
 @section('content')
 <div style='height:70vh' class="section">
 <div class="container justify-content-center h-100">
     <div class="row text-center">
         <div class="col-md-12" >
-            <h1 class="judul">product ni</h1>
+            <h1 class="judul">{{$prod -> joinCategory-> name}}</h1>
         </div>
         </div>
 
