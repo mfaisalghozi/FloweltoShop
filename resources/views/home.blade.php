@@ -8,12 +8,12 @@
             <h4 class="subjudul">The Best Flower Shop in Binus University</h4>
         </div>
         <div class="cat">
-                @foreach ($namee as $mov)
+                -- @foreach ($cat as $catt)
                     
                 <div class="category">
-                    <div class="catimg"><img src="/img/{{$mov -> photo}}" height="300" width="220"></div>
-                    <div class="catname"><a>{{$mov -> title}}</a></div>
-                <div class="details"><a href="/details/{{$mov -> id}}">See Products</a></div>
+                    <div class="catimg"><img src="/img/{{$catt -> catimg}}" height="300" width="220"></div>
+                    <div class="catname"><a>{{$catt -> catname}}</a></div>
+                <div class="details"><a href="/details/{{$catt -> id}}">See Products</a></div>
                 </div>
                 @endforeach
                 
