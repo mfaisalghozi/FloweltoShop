@@ -66,13 +66,13 @@
 
                             <div class="col-md-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Radios" id="male" value="male" checked>
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
                                     <label class="form-check-label" for="male">
                                       Male
                                     </label>
                                   </div>
                                   <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="Radios" id="female" value="female">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
                                     <label class="form-check-label" for="female">
                                       Female
                                     </label>
@@ -84,7 +84,7 @@
                             <label for="dob" class="col-md-4 col-form-label text-md-right">{{ __('Date of Birth') }}</label>
 
                             <div class="col-md-6">
-                                <input id= "dob" type="text" class="form-control" id="formGroupExampleInput" placeholder="mm/dd/yyyy">
+                                <input id= "dob" type="text" class="form-control" name ="dob" placeholder="yyyy/mm/dd">
                             </div>
                         </div>
 
@@ -92,7 +92,7 @@
                             <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id= "address" type="text" class="form-control" id="formGroupExampleInput" placeholder="Address">
+                                <input id= "address" type="text" class="form-control" name="address" placeholder="Address">
                             </div>
                         </div>
 

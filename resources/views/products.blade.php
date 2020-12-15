@@ -5,11 +5,11 @@
 <div class="container justify-content-center h-100">
     <div class="row text-center">
         <div class="col-md-12" >
-            <h1 class="judul">Welcome to Flowelto Shop</h1>
-            <h4 class="subjudul">The Best Flower Shop in Binus University</h4>
+            <h1 class="judul">product ni</h1>
         </div>
         </div>
-        <div class="row h-100 align-items-enter">
+
+        {{-- <div class="row h-100 align-items-enter">
             @foreach ($cat as $catt)
             <div class="text-center offset-md-1 col-md-4">
         
@@ -17,12 +17,12 @@
                 <img class="card-img-top" src="{{$catt -> catimg}}" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">{{$catt -> catname}}</h5>
-                  <a href="/products/{{$catt -> id}}" class="btn btn-primary">See Products</a>
+                  <a href="/details/{{$catt -> id}}" class="btn btn-primary">See Products</a>
                 </div>
               </div>
             </div>
               @endforeach
-    </div>
+    </div> --}}
 </div>
 </div>
 @endsection

@@ -17,7 +17,7 @@
                 <img class="card-img-top" src="{{$catt -> catimg}}" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">{{$catt -> catname}}</h5>
-                  <a href="/details/{{$catt -> id}}" class="btn btn-primary">See Products</a>
+                  <a href="/products/{{$catt -> id}}" class="btn btn-primary">See Products</a>
                 </div>
               </div>
             </div>

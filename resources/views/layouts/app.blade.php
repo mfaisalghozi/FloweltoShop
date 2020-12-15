@@ -68,6 +68,19 @@
                                     <a class="nav-link"><?php echo $current = Carbon::now()->addHours(7)->toDayDateTimeString();?></a>
                                 </li>    
                         @else
+                        <li class="nav-item">
+                            <div class="dropdown show">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Categories
+                                </a>
+                              
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </div>
+                        </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -85,6 +98,9 @@
                                     </form>
                                 </div>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link"><?php echo $current = Carbon::now()->addHours(7)->toDayDateTimeString();?></a>
+                            </li>  
                         @endguest
                     </ul>
                 </div>
