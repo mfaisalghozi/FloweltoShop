@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class WelcomeController extends Controller
 {
     public function welcome(){
-        $cat = Category::all();
+        $cat = Category::All();
         return view('welcome', ['cat'=>$cat]);
     }
 }

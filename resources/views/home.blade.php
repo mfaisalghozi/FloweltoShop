@@ -14,7 +14,7 @@
             <div class="text-center offset-md-1 col-md-4">
         
             <div class="card" style="width: 28rem; margin-top: 7%">
-                <img class="card-img-top" src="{{$catt -> catimg}}" alt="Card image cap">
+                <img class="card-img-top" src="{{$catt -> catimg}}" style="height: 446px; width: 446px" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">{{$catt -> catname}}</h5>
                   <a href="/products/{{$catt -> id}}" class="btn btn-primary">See Products</a>

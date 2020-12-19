@@ -24,7 +24,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav style="background-color:pink " class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Flowelto Shop
@@ -50,9 +50,9 @@
                                 </a>
                               
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
+                                    @foreach ($cat as $catt)
+                                    <a class="dropdown-item" href="/products/{{$catt -> id}}">{{$catt -> catname}}</a>
+                                    @endforeach
                                 </div>
                               </div>
                         </li>
@@ -90,7 +90,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Add Flower</a>
                                     <a class="dropdown-item" href="#">Manage Categories</a>
-                                    <a class="dropdown-item" href="#">Change Password</a>
+                                    <a class="dropdown-item" href="/repassword">Change Password</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -127,7 +127,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">My Cart</a>
                                     <a class="dropdown-item" href="#">Transaction History</a>
-                                    <a class="dropdown-item" href="#">Change Password</a>
+                                    <a class="dropdown-item" href="/repassword">Change Password</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

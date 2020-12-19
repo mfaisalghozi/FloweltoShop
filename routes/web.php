@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RepasswordController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -22,4 +23,16 @@ Auth::routes();
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/products/{id}', 'ProductController@index');
+Route::get('/products/{id}/search', 'ProductController@search');
+Route::get('/products/{id}/searchharga', 'ProductController@searchharga');
+
+Route::get('/repassword', function () {
+     return view("repassword");
+    });
+Route::patch('/repassword/{user}', 'RepasswordController@index');
+
+Route::get('/details/{id}', 'DetailsController@index');
+
+Route::get('/update/{id}', 'UpdateController@index');
