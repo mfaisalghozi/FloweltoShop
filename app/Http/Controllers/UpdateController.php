@@ -10,6 +10,6 @@ class UpdateController extends Controller
     public function index($id)
     {
         $id = Product::find($id);
-        return view('details', ['prod'=>$id]);
+        return view('update', ['prod'=>$id]);
     }
 }

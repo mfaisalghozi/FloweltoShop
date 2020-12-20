@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\RepasswordController;
+use App\Http\Controllers\UpdateController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/addf', 'ProductController@addf');
+Route::patch('/products/addf', 'ProductController@addflower');
+
+
 Route::get('/products/{id}', 'ProductController@index');
 Route::get('/products/{id}/search', 'ProductController@search');
 Route::get('/products/{id}/searchharga', 'ProductController@searchharga');
@@ -36,3 +41,5 @@ Route::patch('/repassword/{user}', 'RepasswordController@index');
 Route::get('/details/{id}', 'DetailsController@index');
 
 Route::get('/update/{id}', 'UpdateController@index');
+Route::patch('/products/{id}/update', 'ProductController@update');
+

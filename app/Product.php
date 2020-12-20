@@ -10,5 +10,9 @@ class Product extends Model
         return $this->belongsTo('App\Category', 'id', 'id');
     }
 
-    public $table = 'product';
+    protected $table = 'product';
+
+    protected $fillable = [
+        'catid', 'productname', 'productdesc', 'productprice', 'productimg'
+    ];
 }

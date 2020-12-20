@@ -88,7 +88,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Add Flower</a>
+                                    <a class="dropdown-item" href="/addf">Add Flower</a>
                                     <a class="dropdown-item" href="#">Manage Categories</a>
                                     <a class="dropdown-item" href="/repassword">Change Password</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
